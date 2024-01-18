@@ -16,6 +16,10 @@
 		26356E302B596ECC00BE9531 /* MyTunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26356E2F2B596ECC00BE9531 /* MyTunesTests.swift */; };
 		26356E3A2B596ECC00BE9531 /* MyTunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26356E392B596ECC00BE9531 /* MyTunesUITests.swift */; };
 		26356E3C2B596ECC00BE9531 /* MyTunesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26356E3B2B596ECC00BE9531 /* MyTunesUITestsLaunchTests.swift */; };
+		26356E552B5985F800BE9531 /* Views.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 26356E542B5985F800BE9531 /* Views.rtf */; };
+		26356E582B59862A00BE9531 /* Models.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 26356E572B59862A00BE9531 /* Models.rtf */; };
+		26356E5B2B59868E00BE9531 /* Components.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 26356E5A2B59868E00BE9531 /* Components.rtf */; };
+		26356E5F2B59872600BE9531 /* Local.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 26356E5E2B59872600BE9531 /* Local.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		26356E352B596ECC00BE9531 /* MyTunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTunesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26356E392B596ECC00BE9531 /* MyTunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTunesUITests.swift; sourceTree = "<group>"; };
 		26356E3B2B596ECC00BE9531 /* MyTunesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTunesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		26356E542B5985F800BE9531 /* Views.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Views.rtf; sourceTree = "<group>"; };
+		26356E572B59862A00BE9531 /* Models.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Models.rtf; sourceTree = "<group>"; };
+		26356E5A2B59868E00BE9531 /* Components.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Components.rtf; sourceTree = "<group>"; };
+		26356E5E2B59872600BE9531 /* Local.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Local.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +106,10 @@
 		26356E182B596ECA00BE9531 /* MyTunes */ = {
 			isa = PBXGroup;
 			children = (
-				26356E192B596ECA00BE9531 /* MyTunesApp.swift */,
 				26356E1B2B596ECA00BE9531 /* ContentView.swift */,
-				26356E1D2B596ECC00BE9531 /* Assets.xcassets */,
-				26356E222B596ECC00BE9531 /* Persistence.swift */,
-				26356E242B596ECC00BE9531 /* MyTunes.xcdatamodeld */,
+				26356E4A2B597EA900BE9531 /* App */,
+				26356E492B597EA000BE9531 /* Core */,
+				26356E482B597E8D00BE9531 /* Features */,
 				26356E1F2B596ECC00BE9531 /* Preview Content */,
 			);
 			path = MyTunes;
@@ -131,6 +138,99 @@
 				26356E3B2B596ECC00BE9531 /* MyTunesUITestsLaunchTests.swift */,
 			);
 			path = MyTunesUITests;
+			sourceTree = "<group>";
+		};
+		26356E482B597E8D00BE9531 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				26356E4D2B59808800BE9531 /* Common */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		26356E492B597EA000BE9531 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				26356E5C2B5986D000BE9531 /* Data */,
+				26356E4C2B597F6400BE9531 /* Utilities */,
+				26356E4B2B597EC700BE9531 /* Resources */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		26356E4A2B597EA900BE9531 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				26356E192B596ECA00BE9531 /* MyTunesApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		26356E4B2B597EC700BE9531 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				26356E1D2B596ECC00BE9531 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		26356E4C2B597F6400BE9531 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				26356E222B596ECC00BE9531 /* Persistence.swift */,
+				26356E242B596ECC00BE9531 /* MyTunes.xcdatamodeld */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		26356E4D2B59808800BE9531 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				26356E592B59865000BE9531 /* Components */,
+				26356E532B5985CF00BE9531 /* Views */,
+				26356E4E2B59809C00BE9531 /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		26356E4E2B59809C00BE9531 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26356E572B59862A00BE9531 /* Models.rtf */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		26356E532B5985CF00BE9531 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26356E542B5985F800BE9531 /* Views.rtf */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		26356E592B59865000BE9531 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				26356E5A2B59868E00BE9531 /* Components.rtf */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		26356E5C2B5986D000BE9531 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				26356E5D2B5986FA00BE9531 /* Local */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		26356E5D2B5986FA00BE9531 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				26356E5E2B59872600BE9531 /* Local.rtf */,
+			);
+			path = Local;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +337,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26356E582B59862A00BE9531 /* Models.rtf in Resources */,
 				26356E212B596ECC00BE9531 /* Preview Assets.xcassets in Resources */,
+				26356E5F2B59872600BE9531 /* Local.rtf in Resources */,
 				26356E1E2B596ECC00BE9531 /* Assets.xcassets in Resources */,
+				26356E5B2B59868E00BE9531 /* Components.rtf in Resources */,
+				26356E552B5985F800BE9531 /* Views.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +542,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,6 +572,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
