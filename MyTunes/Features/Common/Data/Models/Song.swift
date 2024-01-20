@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Song: Codable{
+struct Song: Codable, Equatable{
     var title: String
     var artist: String
     var album: String
