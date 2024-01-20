@@ -32,6 +32,8 @@
 		26356E7D2B5A9E5000BE9531 /* Stevie Wonder - I Just Called To Say I Love You.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26356E762B5A9E5000BE9531 /* Stevie Wonder - I Just Called To Say I Love You.mp3 */; };
 		26356E7E2B5A9E5000BE9531 /* ABBA - Dancing Queen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26356E772B5A9E5000BE9531 /* ABBA - Dancing Queen.mp3 */; };
 		26356E7F2B5A9E5000BE9531 /* Bee Gees - How Deep Is Your Love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26356E782B5A9E5000BE9531 /* Bee Gees - How Deep Is Your Love.mp3 */; };
+		26356E812B5AB9F300BE9531 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26356E802B5AB9F200BE9531 /* PlayerViewModel.swift */; };
+		26356E832B5AD98000BE9531 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26356E822B5AD98000BE9531 /* PlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		26356E762B5A9E5000BE9531 /* Stevie Wonder - I Just Called To Say I Love You.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Stevie Wonder - I Just Called To Say I Love You.mp3"; sourceTree = "<group>"; };
 		26356E772B5A9E5000BE9531 /* ABBA - Dancing Queen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ABBA - Dancing Queen.mp3"; sourceTree = "<group>"; };
 		26356E782B5A9E5000BE9531 /* Bee Gees - How Deep Is Your Love.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bee Gees - How Deep Is Your Love.mp3"; sourceTree = "<group>"; };
+		26356E802B5AB9F200BE9531 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		26356E822B5AD98000BE9531 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +236,7 @@
 				26356E542B5985F800BE9531 /* Views.rtf */,
 				26356E1B2B596ECA00BE9531 /* ContentView.swift */,
 				26356E6C2B5A37CA00BE9531 /* PageView.swift */,
+				26356E822B5AD98000BE9531 /* PlayerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				26356E662B5A2DDA00BE9531 /* ViewModels.rtf */,
+				26356E802B5AB9F200BE9531 /* PlayerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -443,8 +449,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26356E812B5AB9F300BE9531 /* PlayerViewModel.swift in Sources */,
 				26356E232B596ECC00BE9531 /* Persistence.swift in Sources */,
 				26356E262B596ECC00BE9531 /* MyTunes.xcdatamodeld in Sources */,
+				26356E832B5AD98000BE9531 /* PlayerView.swift in Sources */,
 				26356E1C2B596ECA00BE9531 /* ContentView.swift in Sources */,
 				26356E692B5A2EEF00BE9531 /* SongView.swift in Sources */,
 				26356E1A2B596ECA00BE9531 /* MyTunesApp.swift in Sources */,
