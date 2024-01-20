@@ -12,6 +12,8 @@ struct PageView: View {
     @State var searchText: String = ""
     @State var songList = SongRepositorySample.getSongs()
     @State var isPlayerViewVisible = false
+    @State var selectedSong: Song? = nil
+
 
     var body: some View {
         NavigationView{
@@ -23,6 +25,7 @@ struct PageView: View {
                     PlayerView(viewModel: viewModel, song: viewModel.currentSong)
                         .transition(.move(edge: .bottom))
                         .animation(.easeInOut)
+                        .onAppear()
                 }
             }
             .navigationTitle(Text("Your Songs"))

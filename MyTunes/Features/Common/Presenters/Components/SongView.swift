@@ -32,7 +32,11 @@ struct SongView: View {
                 }
             }
             .padding([.top, .bottom], 5)
+            .background(viewModel.currentSong == song && viewModel.isPlaying ? Color.gray.opacity(0.5) : Color.clear)
+            .contentShape(Rectangle())
         }
+        .frame(width: .infinity, height: .infinity)
+//        .background(viewModel.currentSong == song && viewModel.isPlaying ? Color.gray : Color.clear)
         .buttonStyle(PlainButtonStyle())
     }
 }

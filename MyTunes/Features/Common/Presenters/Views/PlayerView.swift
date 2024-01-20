@@ -44,14 +44,35 @@ struct PlayerView: View {
 
             }
             Slider(value: $playbackPosition, in: 0...viewModel.playerDuration,step:1)
-                .padding(.horizontal)
+                .padding(.horizontal, 20)
+            
+            HStack{
+                Text("\(formattedTime(from: playbackPosition))")
+                Spacer()
+                Text("\(formattedTime(from: viewModel.playerDuration))")
+            }
+            .padding(.horizontal, 10)
+
         }
-        .frame(width: UIScreen.main.bounds.width, height: 100)
+        .frame(width: UIScreen.main.bounds.width, height: 120)
         .background(.white)
+        
+        .onAppear {
+            playbackPosition = viewModel.currentTime
+        }
         .onChange(of: playbackPosition) { newPosition in
             viewModel.seek(to: newPosition)
         }
+        .onChange(of: viewModel.currentTime) { currentTime in
+            playbackPosition = currentTime
+        }
     }
+    
+    private func formattedTime(from seconds: Double) -> String {
+            let minutes = Int(seconds) / 60
+            let remainingSeconds = Int(seconds) % 60
+            return String(format: "%02d:%02d", minutes, remainingSeconds)
+        }
 }
 
 #Preview {
