@@ -19,7 +19,7 @@ struct SongView: View {
                 Image("\(song.pathImage)")
                     .resizable()
                     .frame(width: 75, height: 75)
-                    .padding()
+                    .padding([.leading, .trailing], 10)
                 VStack(alignment: .leading){
                     Text("\(song.title)")
                         .bold()
@@ -30,13 +30,10 @@ struct SongView: View {
                         .font(.caption)
                         .foregroundStyle(.gray)
                 }
-                Spacer()
             }
+            .padding([.top, .bottom], 5)
         }
         .buttonStyle(PlainButtonStyle())
-//        .onTapGesture {
-//            viewModel.playPauseSong(song: song)
-//        }
     }
 }
 
