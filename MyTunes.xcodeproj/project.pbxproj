@@ -26,14 +26,14 @@
 		26356E6D2B5A37CA00BE9531 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26356E6C2B5A37CA00BE9531 /* PageView.swift */; };
 		26356E6F2B5A38BC00BE9531 /* SongRepositorySample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26356E6E2B5A38BC00BE9531 /* SongRepositorySample.swift */; };
 		26356E792B5A9E5000BE9531 /* Queen - Bohemian Rhapsody.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26356E722B5A9E4E00BE9531 /* Queen - Bohemian Rhapsody.mp3 */; };
-		26356E7A2B5A9E5000BE9531 /* Frank Sinatra - My Way.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26356E732B5A9E4F00BE9531 /* Frank Sinatra - My Way.mp3 */; };
 		26356E7B2B5A9E5000BE9531 /* Gilbert O Sullivan - Alone Again Naturally.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26356E742B5A9E4F00BE9531 /* Gilbert O Sullivan - Alone Again Naturally.mp3 */; };
-		26356E7C2B5A9E5000BE9531 /* Matthew Wilder - Break My Stride.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26356E752B5A9E4F00BE9531 /* Matthew Wilder - Break My Stride.mp3 */; };
 		26356E7D2B5A9E5000BE9531 /* Stevie Wonder - I Just Called To Say I Love You.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26356E762B5A9E5000BE9531 /* Stevie Wonder - I Just Called To Say I Love You.mp3 */; };
-		26356E7E2B5A9E5000BE9531 /* ABBA - Dancing Queen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26356E772B5A9E5000BE9531 /* ABBA - Dancing Queen.mp3 */; };
 		26356E7F2B5A9E5000BE9531 /* Bee Gees - How Deep Is Your Love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26356E782B5A9E5000BE9531 /* Bee Gees - How Deep Is Your Love.mp3 */; };
 		26356E812B5AB9F300BE9531 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26356E802B5AB9F200BE9531 /* PlayerViewModel.swift */; };
 		26356E832B5AD98000BE9531 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26356E822B5AD98000BE9531 /* PlayerView.swift */; };
+		26356E852B5B780000BE9531 /* Matthew Wilder - Break My Stride.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26356E842B5B780000BE9531 /* Matthew Wilder - Break My Stride.mp3 */; };
+		26356E872B5B785100BE9531 /* ABBA - Dancing Queen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26356E862B5B785100BE9531 /* ABBA - Dancing Queen.mp3 */; };
+		26356E8B2B5B7A2300BE9531 /* Frank Sinatra - My Way.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26356E8A2B5B7A2300BE9531 /* Frank Sinatra - My Way.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,14 +76,14 @@
 		26356E6C2B5A37CA00BE9531 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		26356E6E2B5A38BC00BE9531 /* SongRepositorySample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRepositorySample.swift; sourceTree = "<group>"; };
 		26356E722B5A9E4E00BE9531 /* Queen - Bohemian Rhapsody.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Queen - Bohemian Rhapsody.mp3"; sourceTree = "<group>"; };
-		26356E732B5A9E4F00BE9531 /* Frank Sinatra - My Way.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Frank Sinatra - My Way.mp3"; sourceTree = "<group>"; };
 		26356E742B5A9E4F00BE9531 /* Gilbert O Sullivan - Alone Again Naturally.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Gilbert O Sullivan - Alone Again Naturally.mp3"; sourceTree = "<group>"; };
-		26356E752B5A9E4F00BE9531 /* Matthew Wilder - Break My Stride.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Matthew Wilder - Break My Stride.mp3"; sourceTree = "<group>"; };
 		26356E762B5A9E5000BE9531 /* Stevie Wonder - I Just Called To Say I Love You.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Stevie Wonder - I Just Called To Say I Love You.mp3"; sourceTree = "<group>"; };
-		26356E772B5A9E5000BE9531 /* ABBA - Dancing Queen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ABBA - Dancing Queen.mp3"; sourceTree = "<group>"; };
 		26356E782B5A9E5000BE9531 /* Bee Gees - How Deep Is Your Love.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bee Gees - How Deep Is Your Love.mp3"; sourceTree = "<group>"; };
 		26356E802B5AB9F200BE9531 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		26356E822B5AD98000BE9531 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		26356E842B5B780000BE9531 /* Matthew Wilder - Break My Stride.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Matthew Wilder - Break My Stride.mp3"; sourceTree = "<group>"; };
+		26356E862B5B785100BE9531 /* ABBA - Dancing Queen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ABBA - Dancing Queen.mp3"; sourceTree = "<group>"; };
+		26356E8A2B5B7A2300BE9531 /* Frank Sinatra - My Way.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Frank Sinatra - My Way.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,13 +296,13 @@
 		26356E712B5A9E3900BE9531 /* Song Assets */ = {
 			isa = PBXGroup;
 			children = (
-				26356E772B5A9E5000BE9531 /* ABBA - Dancing Queen.mp3 */,
 				26356E782B5A9E5000BE9531 /* Bee Gees - How Deep Is Your Love.mp3 */,
 				26356E722B5A9E4E00BE9531 /* Queen - Bohemian Rhapsody.mp3 */,
-				26356E752B5A9E4F00BE9531 /* Matthew Wilder - Break My Stride.mp3 */,
 				26356E742B5A9E4F00BE9531 /* Gilbert O Sullivan - Alone Again Naturally.mp3 */,
-				26356E732B5A9E4F00BE9531 /* Frank Sinatra - My Way.mp3 */,
+				26356E862B5B785100BE9531 /* ABBA - Dancing Queen.mp3 */,
+				26356E842B5B780000BE9531 /* Matthew Wilder - Break My Stride.mp3 */,
 				26356E762B5A9E5000BE9531 /* Stevie Wonder - I Just Called To Say I Love You.mp3 */,
+				26356E8A2B5B7A2300BE9531 /* Frank Sinatra - My Way.mp3 */,
 			);
 			path = "Song Assets";
 			sourceTree = "<group>";
@@ -411,19 +411,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26356E7E2B5A9E5000BE9531 /* ABBA - Dancing Queen.mp3 in Resources */,
 				26356E792B5A9E5000BE9531 /* Queen - Bohemian Rhapsody.mp3 in Resources */,
 				26356E582B59862A00BE9531 /* Models.rtf in Resources */,
 				26356E212B596ECC00BE9531 /* Preview Assets.xcassets in Resources */,
+				26356E8B2B5B7A2300BE9531 /* Frank Sinatra - My Way.mp3 in Resources */,
 				26356E5F2B59872600BE9531 /* Local.rtf in Resources */,
-				26356E7A2B5A9E5000BE9531 /* Frank Sinatra - My Way.mp3 in Resources */,
 				26356E672B5A2DDA00BE9531 /* ViewModels.rtf in Resources */,
 				26356E1E2B596ECC00BE9531 /* Assets.xcassets in Resources */,
+				26356E852B5B780000BE9531 /* Matthew Wilder - Break My Stride.mp3 in Resources */,
 				26356E7B2B5A9E5000BE9531 /* Gilbert O Sullivan - Alone Again Naturally.mp3 in Resources */,
-				26356E7C2B5A9E5000BE9531 /* Matthew Wilder - Break My Stride.mp3 in Resources */,
 				26356E5B2B59868E00BE9531 /* Components.rtf in Resources */,
 				26356E7D2B5A9E5000BE9531 /* Stevie Wonder - I Just Called To Say I Love You.mp3 in Resources */,
 				26356E7F2B5A9E5000BE9531 /* Bee Gees - How Deep Is Your Love.mp3 in Resources */,
+				26356E872B5B785100BE9531 /* ABBA - Dancing Queen.mp3 in Resources */,
 				26356E552B5985F800BE9531 /* Views.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
