@@ -9,7 +9,9 @@ import SwiftUI
 
 struct PlayerView: View {
     @ObservedObject var viewModel: PlayerViewModel
+    @State private var playbackPosition: Double = 0.0
     var song: Song?
+
 
     var body: some View {
         VStack{
@@ -41,13 +43,14 @@ struct PlayerView: View {
                 .buttonStyle(PlainButtonStyle())
 
             }
-            Text("slider")
+            Slider(value: $playbackPosition, in: 0...viewModel.playerDuration,step:1)
+                .padding(.horizontal)
         }
         .frame(width: UIScreen.main.bounds.width, height: 100)
         .background(.white)
-//        .frame(width: UIScreen.main.bounds.width) // or use .edgesIgnoringSafeArea(.horizontal)
-
-//        .edgesIgnoringSafeArea(.horizontal)
+        .onChange(of: playbackPosition) { newPosition in
+            viewModel.seek(to: newPosition)
+        }
     }
 }
 

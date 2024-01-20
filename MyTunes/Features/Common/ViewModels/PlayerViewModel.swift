@@ -14,18 +14,12 @@ class PlayerViewModel: ObservableObject {
     @Published private(set) var currentIndex: Int = 0
     @Published private(set) var currentSong: Song?
     @Published var songList = SongRepositorySample.getSongs()
-    @Published var searchText = ""
+    
+    @Published var currentTime: Double = 0.0
+    @Published var playerDuration: Double = 180.0
 
     var player: AVAudioPlayer!
     private var cancellables: Set<AnyCancellable> = []
-    
-    var filteredSongs: [Song] {
-        if searchText.isEmpty {
-            return songList
-        } else {
-            return songList.filter { $0.title.localizedCaseInsensitiveContains(searchText) || $0.artist.localizedCaseInsensitiveContains(searchText) }
-        }
-    }
 
     func playPauseSong(song: Song) {
         if isPlaying {
@@ -43,12 +37,13 @@ class PlayerViewModel: ObservableObject {
             self.player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: url))
             player?.play()
             isPlaying = true
-            currentIndex = filteredSongs.firstIndex(of: song) ?? 0
+            currentIndex = songList.firstIndex(of: song) ?? 0
             currentSong = song
         } catch {
             print("Error playing audio: \(error.localizedDescription)")
         }
     }
+    
     func pauseSong() {
         player?.pause()
         isPlaying = false
@@ -56,32 +51,33 @@ class PlayerViewModel: ObservableObject {
     
     func playBefore() {
         print("clicked play before")
-//        guard currentIndex > 0 else { return }
-//        currentIndex -= 1
-        
         if currentIndex > 0 {
             currentIndex -= 1
         } else {
             currentIndex = songList.count - 1
         }
-        playCurrentSong()
+        playSong(song: songList[currentIndex])
     }
 
     func playAfter() {
         print("clicked play after")
-//        guard currentIndex < songList.count - 1 else { return }
         if (currentIndex < songList.count - 1){
             currentIndex += 1
         } else {
             currentIndex = 0
         }
-//        currentIndex += 1
-        playCurrentSong()
+        playSong(song: songList[currentIndex])
     }
-
-    func playCurrentSong() {
-        let selectedSong = songList[currentIndex]
-        playSong(song: selectedSong)
+    
+    func seek(to position: Double) {
+        player?.currentTime = position
+        currentTime = position
+        updatePlaybackInfo()
+    }
+    
+    private func updatePlaybackInfo() {
+        currentTime = player?.currentTime ?? 0.0
+        playerDuration = player?.duration ?? 0.0
     }
 }
 
