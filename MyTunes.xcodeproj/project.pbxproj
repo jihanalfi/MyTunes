@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		26356E1A2B596ECA00BE9531 /* MyTunesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26356E192B596ECA00BE9531 /* MyTunesApp.swift */; };
-		26356E1C2B596ECA00BE9531 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26356E1B2B596ECA00BE9531 /* ContentView.swift */; };
 		26356E1E2B596ECC00BE9531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26356E1D2B596ECC00BE9531 /* Assets.xcassets */; };
 		26356E212B596ECC00BE9531 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26356E202B596ECC00BE9531 /* Preview Assets.xcassets */; };
 		26356E232B596ECC00BE9531 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26356E222B596ECC00BE9531 /* Persistence.swift */; };
@@ -56,7 +55,6 @@
 /* Begin PBXFileReference section */
 		26356E162B596ECA00BE9531 /* MyTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26356E192B596ECA00BE9531 /* MyTunesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTunesApp.swift; sourceTree = "<group>"; };
-		26356E1B2B596ECA00BE9531 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		26356E1D2B596ECC00BE9531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26356E202B596ECC00BE9531 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		26356E222B596ECC00BE9531 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -234,7 +232,6 @@
 			isa = PBXGroup;
 			children = (
 				26356E542B5985F800BE9531 /* Views.rtf */,
-				26356E1B2B596ECA00BE9531 /* ContentView.swift */,
 				26356E6C2B5A37CA00BE9531 /* PageView.swift */,
 				26356E822B5AD98000BE9531 /* PlayerView.swift */,
 			);
@@ -453,7 +450,6 @@
 				26356E232B596ECC00BE9531 /* Persistence.swift in Sources */,
 				26356E262B596ECC00BE9531 /* MyTunes.xcdatamodeld in Sources */,
 				26356E832B5AD98000BE9531 /* PlayerView.swift in Sources */,
-				26356E1C2B596ECA00BE9531 /* ContentView.swift in Sources */,
 				26356E692B5A2EEF00BE9531 /* SongView.swift in Sources */,
 				26356E1A2B596ECA00BE9531 /* MyTunesApp.swift in Sources */,
 				26356E642B5A2D0800BE9531 /* Song.swift in Sources */,

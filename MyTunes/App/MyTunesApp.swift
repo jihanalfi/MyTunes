@@ -13,7 +13,7 @@ struct MyTunesApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PageView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
