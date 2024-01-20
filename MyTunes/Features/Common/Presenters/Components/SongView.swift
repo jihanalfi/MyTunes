@@ -12,26 +12,31 @@ struct SongView: View {
     var song: Song
   
     var body: some View {
-        HStack{
-            Image("\(song.pathImage)")
-                .resizable()
-                .frame(width: 75, height: 75)
-                .padding()
-            VStack(alignment: .leading){
-                Text("\(song.title)")
-                    .bold()
-                    .lineLimit(1)
-                    .fixedClipped()
-                Text("\(song.artist)")
-                Text("\(song.album)")
-                    .font(.caption)
-                    .foregroundStyle(.gray)
-            }
-            Spacer()
-        }
-        .onTapGesture {
+        Button(action: {
             viewModel.playPauseSong(song: song)
+        }){
+            HStack{
+                Image("\(song.pathImage)")
+                    .resizable()
+                    .frame(width: 75, height: 75)
+                    .padding()
+                VStack(alignment: .leading){
+                    Text("\(song.title)")
+                        .bold()
+                        .lineLimit(1)
+                        .fixedClipped()
+                    Text("\(song.artist)")
+                    Text("\(song.album)")
+                        .font(.caption)
+                        .foregroundStyle(.gray)
+                }
+                Spacer()
+            }
         }
+        .buttonStyle(PlainButtonStyle())
+//        .onTapGesture {
+//            viewModel.playPauseSong(song: song)
+//        }
     }
 }
 

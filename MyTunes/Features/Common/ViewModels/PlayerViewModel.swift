@@ -11,7 +11,8 @@ import Combine
 
 class PlayerViewModel: ObservableObject {
     @Published var isPlaying: Bool = false
-    @Published var currentIndex: Int = 0
+    @Published private(set) var currentIndex: Int = 0
+    @Published private(set) var currentSong: Song?
     @Published var songList = SongRepositorySample.getSongs()
     @Published var searchText = ""
 
@@ -26,7 +27,7 @@ class PlayerViewModel: ObservableObject {
         }
     }
 
-     func playPauseSong(song: Song) {
+    func playPauseSong(song: Song) {
         if isPlaying {
             pauseSong()
         } else {
@@ -36,35 +37,49 @@ class PlayerViewModel: ObservableObject {
 
     private func playSong(song: Song) {
         guard let url = Bundle.main.path(forResource: song.pathFile, ofType: "mp3") else { return }
-        print("now playing: \(song.title) - \(song.artist)")
+        print("Now playing: \(song.title) - \(song.artist)")
 
         do {
             self.player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: url))
             player?.play()
             isPlaying = true
+            currentIndex = filteredSongs.firstIndex(of: song) ?? 0
+            currentSong = song
         } catch {
             print("Error playing audio: \(error.localizedDescription)")
         }
     }
-
-    private func pauseSong() {
+    func pauseSong() {
         player?.pause()
         isPlaying = false
     }
     
     func playBefore() {
-        guard currentIndex > 0 else { return }
-        currentIndex -= 1
+        print("clicked play before")
+//        guard currentIndex > 0 else { return }
+//        currentIndex -= 1
+        
+        if currentIndex > 0 {
+            currentIndex -= 1
+        } else {
+            currentIndex = songList.count - 1
+        }
         playCurrentSong()
     }
 
     func playAfter() {
-        guard currentIndex < songList.count - 1 else { return }
-        currentIndex += 1
+        print("clicked play after")
+//        guard currentIndex < songList.count - 1 else { return }
+        if (currentIndex < songList.count - 1){
+            currentIndex += 1
+        } else {
+            currentIndex = 0
+        }
+//        currentIndex += 1
         playCurrentSong()
     }
 
-    private func playCurrentSong() {
+    func playCurrentSong() {
         let selectedSong = songList[currentIndex]
         playSong(song: selectedSong)
     }
